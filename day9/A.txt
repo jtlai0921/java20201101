@@ -1,0 +1,61 @@
+﻿package com.SB;
+
+import com.SA.student;
+import com.SA.student2;
+/**
+ * 
+ * @author teacher<br>
+ * <h1>A班學員資料</h1>
+ *
+ */
+public class A extends student implements student2{
+	
+	private int chi;
+	/**
+	 * 
+	 * @param name 輸入姓名
+	 * @param chi 輸入國文分數
+	 * <br>
+	 * EX:<br>
+	 * A a =new A("a",65);
+	 */
+	public A(String name,int chi) {
+		super(name);
+		this.chi=chi;
+	}
+	
+	 /**
+	  * @param chi 輸入修改國文
+	  */
+	@Override	 
+	public void set(int chi) {
+		this.chi=chi;
+		
+	}
+	/**
+	 * @return chi 國文分數
+	 */
+	@Override
+	public int get() {
+		// TODO Auto-generated method stub
+		return chi;
+	}
+	/**
+	 * 輸出詳細資料
+	 * EX:<br>
+	 * 名:aaa 國文:100
+	 */
+	@Override
+	public String show() {
+		// TODO Auto-generated method stub
+		return super.show()+"\t國文:"+get();
+	}
+	
+	
+	
+	
+	
+	
+	
+
+}

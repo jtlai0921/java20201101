@@ -1,0 +1,20 @@
+﻿class  A extends school
+{
+	private int chi;
+	A(String name,int chi)
+	{
+		super(name);
+		this.chi=chi;
+	}
+
+
+	String show()
+	{
+		return super.show()+"\t國文:"+chi;
+	}
+
+	void skillA(String msg)
+	{
+		System.out.println(msg);
+	}
+}

@@ -1,0 +1,21 @@
+﻿class student
+{
+	String name;
+	double chi;
+
+	student(String name)
+	{
+		this.name=name;
+		System.out.println("新增一位學員 name="+name);
+	}
+
+	student(String name,int chi)
+	{
+		this(name);//student(name);
+		this.chi=chi;
+		System.out.println("國文:"+chi);
+		/*this.name=name;
+		this.chi=chi;
+		System.out.println("新增一位學員 name="+name+"\t國文:"+chi);*/
+	}
+}

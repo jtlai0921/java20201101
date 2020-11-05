@@ -1,0 +1,36 @@
+﻿package lambdaEX;
+
+public interface book {
+	double pi=3.14;
+	
+	void bookName(String name);
+	double bookPrice(double price);
+	
+	static void CompanyName(String name)
+	{
+		System.out.println("公司名:"+name);
+	}
+	
+	default String Title(String msg)
+	{
+		return "標題:"+msg;
+	}
+
+}
+
+class bookStore implements book
+{
+
+	@Override
+	public void bookName(String name) {
+		System.out.println("書名:"+name);
+		
+	}
+
+	@Override
+	public double bookPrice(double price) {
+		// TODO Auto-generated method stub
+		return price*0.95;
+	}
+	
+}

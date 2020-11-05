@@ -1,0 +1,86 @@
+﻿package lambdaEX;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+
+interface school
+{
+	void show();
+}
+class SA implements school
+{
+
+	@Override
+	public void show() {
+		System.out.println("hello SA");
+		
+	}
+	
+}
+class SB implements school
+{
+
+	@Override
+	public void show() {
+		System.out.println("hello SB");
+		
+		
+	}
+	
+}
+class SC implements school
+{
+
+	@Override
+	public void show() {
+		System.out.println("hello SC");
+		
+		
+	}
+	
+}
+
+public class ex6 {
+
+	public static void main(String[] args) {
+		school[] s=new school[3];
+		s[0]=new SA();
+		s[1]=new SB();
+		s[2]=new SC();
+		
+		for(school o:s)
+		{
+			o.show();
+		}
+		
+		System.out.println("====================");
+		
+		ArrayList<school> s2=new ArrayList();
+		s2.add(new SA());
+		s2.add(new SB());
+		s2.add(new SC());
+		s2.add(new SA());
+		
+		
+		for(school o:s2)
+		{
+			o.show();
+		}
+		
+		System.out.println("====================");
+		
+		HashSet<school> s3=new HashSet();
+		s3.add(new SA());
+		s3.add(new SB());
+		s3.add(new SB());
+		s3.add(new SC());
+		
+		for(school o:s3)
+		{
+			o.show();
+		}
+		
+
+	}
+
+}

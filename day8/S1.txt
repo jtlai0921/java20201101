@@ -1,0 +1,4 @@
+﻿interface S1 extends S3,S4
+{
+	void show1();
+}

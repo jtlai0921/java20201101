@@ -1,0 +1,67 @@
+﻿class check extends Exception
+{
+
+	check(String msg)
+	{
+		System.out.println(msg);
+	}
+
+}
+
+
+class Order
+{
+	private String name;
+	private int Ruler;
+	private int Pen;
+	private int Sum;
+
+	Order(String name,int Ruler,int Pen) throws check
+	{
+		if(Ruler>=0 && Pen>=0)
+		{
+			this.name=name;
+			this.Ruler=Ruler;
+			this.Pen=Pen;
+			this.Sum=Ruler*20+Pen*25;
+		}
+		else
+		{
+			throw new check("新增的尺與筆的數量需>=0");
+		}
+		
+	}
+
+
+	void show()
+	{
+		this.Sum=Ruler*20+Pen*25;
+		System.out.println("名:"+name+"\t尺:"+Ruler+"\t筆:"+Pen+"\t總計:"+Sum);
+	}
+
+	void setRuler(int Ruler) throws check
+	{
+		if(Ruler>=0)
+		{
+			this.Ruler=Ruler;
+		}
+		else
+		{
+			throw new check("修改尺的數量需>=0");
+		}
+		
+	}
+
+	void setPen(int Pen) throws check
+	{
+		if(Pen>=0)
+		{
+			this.Pen=Pen;
+		}
+		else
+		{
+			throw new check("修改筆的數量需>=0");
+		}
+		
+	}
+}

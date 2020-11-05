@@ -1,0 +1,18 @@
+﻿class book<E,T>
+{
+	private String bookName;
+	private E bookPrice;
+	private T bookPrice2;
+
+	book(String bookName,E bookPrice,T bookPrice2)
+	{
+		this.bookName=bookName;
+		this.bookPrice=bookPrice;
+		this.bookPrice2=bookPrice2;
+
+		System.out.println("書名:"+bookName+
+			"\t價格:"+bookPrice+
+			"\t價格2:"+bookPrice2);
+	}
+
+}

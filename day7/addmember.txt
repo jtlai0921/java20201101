@@ -1,0 +1,11 @@
+﻿class addmember
+{
+	public static void main(String[] args) {
+		member m=new member("abc","uuu");
+
+		System.out.println("userName:"+m.userName+"\tname:"+m.name);
+		m.name="yyy";
+		m.userName="ooo";
+		System.out.println("userName:"+m.userName+"\tname:"+m.name);
+	}
+}

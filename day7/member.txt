@@ -1,0 +1,11 @@
+﻿class member
+{
+	final String userName;
+	String name;
+
+	member(String userName,String name)
+	{
+		this.userName=userName;
+		this.name=name;
+	}
+}

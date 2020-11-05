@@ -1,0 +1,10 @@
+﻿class add4
+{
+	public static void main(String[] args) {
+		school s=new A("a",74);
+
+		System.out.println(s.show());
+		((A)s).skillA("new SA");
+		s.skillA("SA skill");
+	}
+}

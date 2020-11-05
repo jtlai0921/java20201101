@@ -1,0 +1,46 @@
+﻿package lambdaEX;
+
+public class ex5 {
+
+	public static void main(String[] args) {
+		book2 b=new book2()
+		{
+
+			@Override
+			public Object bookPrice(Object price) {
+				// TODO Auto-generated method stub
+				//Integer x=(Integer)price;
+				Integer x=Integer.parseInt(price.toString());
+				
+				return x+10;
+			}
+
+			@Override
+			public Object bookNumber(Object number) {
+				// TODO Auto-generated method stub
+				return null;
+			}
+			
+		};
+		
+		
+		book2<Double,Integer> b2=new book2<Double,Integer>()
+		{
+
+			@Override
+			public Double bookPrice(Double price) {
+				// TODO Auto-generated method stub
+				return null;
+			}
+
+			@Override
+			public Integer bookNumber(Integer number) {
+				// TODO Auto-generated method stub
+				return null;
+			}
+			
+		};
+
+	}
+
+}

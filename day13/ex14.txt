@@ -1,0 +1,34 @@
+﻿package lambdaEX;
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.function.Consumer;
+import java.util.function.Predicate;
+import java.util.stream.Stream;
+
+public class ex14 {
+
+	public static void main(String[] args) {
+		List<Integer> l=Arrays.asList(52,65,41,32,74,85,65,76);		
+		Stream<Integer> s=l.stream();
+		/*Consumer<Integer> c=(Integer t)->System.out.print(t+" ");
+		s.forEach(c);*/
+		
+		//s.forEach((Integer t)->System.out.print(t+" "));
+		/*Predicate<Integer> p=(Integer t)->t>=52 && t<=80;		
+		
+		s
+		.sorted()
+		.filter(p)
+		.forEach(System.out::println);*/
+		
+		
+		s
+		.sorted()
+		.filter((Integer t)->t>=52 && t<=78)
+		.forEach(System.out::println);
+		
+
+	}
+
+}

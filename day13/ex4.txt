@@ -1,0 +1,24 @@
+﻿package lambdaEX;
+
+public class ex4 {
+
+	public static void main(String[] args) {
+		book b=new book() {
+
+			@Override
+			public void bookName(String name) {
+				// TODO Auto-generated method stub
+				
+			}
+
+			@Override
+			public double bookPrice(double price) {
+				// TODO Auto-generated method stub
+				return 0;
+			}
+			
+		};
+
+	}
+
+}

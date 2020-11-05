@@ -1,0 +1,34 @@
+﻿class SA extends school
+{
+	private int chi;
+	SA(String name,int chi)
+	{
+		super(name);
+		this.chi=chi;
+	}
+
+
+
+	void change(int chi)
+	{
+		this.chi=chi;
+		System.out.println("修改國文 chi="+chi);
+	}
+
+	void ss()
+	{
+		System.out.println("SA skill");
+	}
+
+	void skill()
+	{
+		System.out.println("SA skill");
+	}
+
+
+	public int abc(int y)
+	{
+		return 100;
+	}
+
+}

@@ -1,0 +1,22 @@
+﻿class A extends student
+{
+	
+	int word;
+
+	A(String name,int word)
+	{
+
+		super(name);//student("ddd");
+		this.word=word;
+		System.out.println("A班學員 , word="+this.word);
+	}
+
+
+	A(String name,int chi,int word)
+	{
+		super(name,chi);
+		//super(name);
+		//this(name,word);
+	}
+
+}

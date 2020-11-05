@@ -1,0 +1,28 @@
+﻿package com.SB;
+import com.SA.student;
+import com.SA.student2;
+public class A extends student implements student2
+{
+	private int chi;
+
+	public A(String name,int chi)
+	{
+		super(name);
+		this.chi=chi;
+	}
+
+	public int get()
+	{
+		return chi;
+	}
+
+	public void set(int chi)
+	{
+		this.chi=chi;
+	}
+
+	public String show()
+	{
+		return super.show()+"\tchi:"+chi;
+	}
+}

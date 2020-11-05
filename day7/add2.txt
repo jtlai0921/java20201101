@@ -1,0 +1,21 @@
+﻿class add2
+{
+	public static void main(String[] args) {
+		//SA a=new SA("abc",10);
+		/*
+			is-a SA
+			is-a Company
+
+		*/
+		Company a=new  SA("abc",10);
+		/*
+		is-a Company
+
+		*/
+		//a.skill();
+
+
+		//System.out.println(a);
+		System.out.println(a.show());
+	}
+}

@@ -1,0 +1,11 @@
+﻿class add1
+{
+	public static void main(String[] args) {
+		//book<Integer,Double> b=new book<Integer,Double>("java",750,750.5);
+
+		book<Integer,Double> b=new book<>("java",750,750.5);
+
+		/*book<Integer> b1=new book<Integer>("java",1000);
+		book<Double> b2=new book<Double>("java",1000.5);*/
+	}
+}

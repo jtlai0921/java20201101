@@ -1,0 +1,50 @@
+﻿class ex7
+{
+	public static void main(String[] args) {
+		int[][][] s=new int[2][][];
+		s[0]=new int[2][];
+		s[0][0]=new int[3];
+		s[0][1]=new int[4];
+
+		s[1]=new int[3][];
+		s[1][0]=new int[2];
+		s[1][1]=new int[3];
+		s[1][2]=new int[4];
+
+		System.out.println(s);
+		System.out.println(s.length);
+		System.out.println(s[0]);
+		System.out.println(s[0].length);
+		System.out.println(s[0][0]);
+		System.out.println(s[0][0].length);
+		System.out.println(s[0][0][0]);
+
+		for(int i=0;i<s.length;i++)
+		{
+			for(int j=0;j<s[i].length;j++)
+			{
+				for(int k=0;k<s[i][j].length;k++)
+				{
+					System.out.println("s["+i+"]["+j+"]["+k+"]="+s[i][j][k]);
+				}
+			}
+		}
+
+		System.out.println("============================");
+
+		for(int[][] o:s)
+		{
+			System.out.println(o);
+			for(int[] u:o)
+			{
+				System.out.println("\t"+u);
+				for(int v:u)
+				{
+					System.out.println("\t\t"+v);
+				}
+			}
+		}
+
+
+	}
+}

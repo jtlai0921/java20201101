@@ -1,0 +1,18 @@
+﻿
+public class Order {
+    private String name;
+    private int ruler;
+    private int pen;
+    private int sum;
+
+    public Order(String name, int ruler, int pen) {
+        this.name = name;
+        this.ruler = ruler;
+        this.pen = pen;
+        sum=ruler*30+pen*29;
+    }
+    
+    
+    
+    
+}

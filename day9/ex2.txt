@@ -1,0 +1,16 @@
+﻿class ex2
+{
+	public static void main(String[] args) {
+		/*********static**********/
+		school2.show();
+		/***********A2-show1()**************/
+
+		school2.A2 a=new school2.A2();
+		a.show1();
+		new school2.A2().show1();
+
+		/***********A2-show2()**************/
+
+		school2.A2.show2();
+	}
+}	

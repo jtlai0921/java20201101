@@ -1,0 +1,33 @@
+﻿package ioEX;
+
+import java.io.EOFException;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+
+public class ObjectInputStreamEx {
+
+	public static void main(String[] args) throws IOException, ClassNotFoundException {
+		FileInputStream fis=new FileInputStream("c:/AAA/Order.txt");		
+		ObjectInputStream ois=new ObjectInputStream(fis);
+		
+		//System.out.println(ois.readObject());
+		while(true)
+		{
+			try
+			{
+				((Order)ois.readObject()).show();
+			}
+			catch(EOFException e)
+			{
+				System.out.println("End..");
+				break;
+			}
+			
+		}
+		
+
+	}
+
+}

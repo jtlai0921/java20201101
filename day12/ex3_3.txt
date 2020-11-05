@@ -1,0 +1,24 @@
+﻿package collectionEX;
+
+import java.util.HashSet;
+import java.util.PriorityQueue;
+import java.util.TreeSet;
+
+public class ex3 {
+
+	public static void main(String[] args) {
+		//HashSet<Integer> x=new HashSet();
+		//TreeSet<Integer> x=new TreeSet();
+		PriorityQueue<Integer> x=new PriorityQueue();
+		
+		x.add(20);
+		x.add(30);
+		x.add(15);
+		x.add(30);
+		x.add(50);
+		
+		System.out.println(x);
+
+	}
+
+}

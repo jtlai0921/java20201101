@@ -1,0 +1,24 @@
+﻿package com.SC;
+import com.SA.student;
+import com.SB.A;
+import com.SB.B;
+class add
+{
+	public static void main(String[] args) {
+		student s=new student("a");
+		A a=new A("a",85);
+
+		System.out.println(a.show());
+		a.set(65);
+		System.out.println(a.show());
+		System.out.println(a.get());
+
+		B b=new B("b",77);
+
+		System.out.println(b.show());
+		b.set(100);
+		System.out.println(b.show());
+
+		System.out.println("eng="+b.get());
+	}
+}

@@ -1,0 +1,18 @@
+﻿class Company
+{
+	enum Month
+	{
+		一月,二月,三月
+	}
+	enum week
+	{
+		星期一,星期二
+	}
+
+	enum Address
+	{
+		台北,台中,台南,高雄
+	}
+
+
+}

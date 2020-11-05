@@ -1,0 +1,14 @@
+﻿class SB extends Company
+{
+	private int Ram;
+
+	SB(String name,int Ram)
+	{
+		super(name);
+		this.Ram=Ram;
+	}
+	String show()
+	{
+		return super.show()+"\tRam:"+Ram;
+	}
+}

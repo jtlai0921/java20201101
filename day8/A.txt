@@ -1,0 +1,17 @@
+﻿class A extends S implements S1 ,S2
+{
+	public void show1()
+	{
+		System.out.println("show1 test");
+	}
+
+	public void show2()
+	{
+		System.out.println("show2 test");
+	}
+
+	public void showA()
+	{
+		System.out.println("showA test");
+	}
+}

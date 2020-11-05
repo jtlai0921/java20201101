@@ -1,0 +1,45 @@
+﻿enum book3
+{
+	java7("台北",700,1),java8("台中",600,3),javaweb("高雄",500,10);//new book3();
+
+	private String address;
+	private int price;
+	private int amount;
+	private book3(String address,int price,int amount)
+	{
+		this.address=address;
+		this.price=price;
+		this.amount=amount;
+	}
+
+	public void setAddress(String address)
+	{
+		this.address=address;
+	}
+
+	public void setPrice(int price)
+	{
+		this.price=price;
+	}
+
+	public void setAmount(int amount)
+	{
+		this.amount=amount;
+	}
+
+	public String getAddress()
+	{
+		return address;
+	}
+
+	public int getPrice()
+	{
+		return price;
+	}
+
+	public int getAmount()
+	{
+		return amount;
+	}
+
+}

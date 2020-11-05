@@ -1,0 +1,17 @@
+﻿class add1
+{
+	public static void main(String[] args) {
+		//book b=new book();
+		//bookStore b=new bookStore();
+		book b=new bookStore();
+
+		System.out.println(b.pi);
+		System.out.println(book.pi);
+		System.out.println(b.bookPrice(100));
+		//b.Title("java");
+		book.Title("java");
+		b.show("java");
+		//book.show("java");
+
+	}
+}

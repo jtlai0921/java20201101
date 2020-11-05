@@ -1,0 +1,53 @@
+﻿package lambdaEX;
+
+import java.util.function.Function;
+
+public class ex11 {
+
+	public static void main(String[] args) {
+		/*Function<String,Integer> f=new Function<String,Integer>()
+		{
+
+			@Override
+			public Integer apply(String s) {
+				// TODO Auto-generated method stub
+				return Integer.parseInt(s);
+			}
+			
+		};*/
+		
+		//Function<String,Integer> f=(String s)->Integer.parseInt(s);
+		Function<String,Integer> f=cal_F::f1;
+		
+		String x="656";
+		System.out.println(100+f.apply(x));
+
+	}
+
+}
+
+class cal_F
+{
+	static Integer f1(String s)
+	{
+		Integer x=Integer.parseInt(s);
+		
+		
+		if(x>=1000)
+		{
+			return x*2;
+		}
+		else if(x>=500)
+		{
+			return x+10;
+		}
+		else if(x>=0)
+		{
+			return x;
+		}
+		else
+		{
+			return 0;
+		}
+	}
+}

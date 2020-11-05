@@ -1,0 +1,22 @@
+﻿package com.SC;
+
+import com.SA.student;
+import com.SB.A;
+import com.SB.B;
+
+public class add {
+
+	public static void main(String[] args) {
+		//System.out.println("hello");
+		student s=new student("s");
+		System.out.println(s.show());
+		
+		A a=new A("a",60);		
+		System.out.println(a.show());
+		
+		B b=new B("b",70);
+		System.out.println(b.show());
+
+	}
+
+}

@@ -1,0 +1,21 @@
+﻿package ioEX;
+
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
+
+public class ObjectOutputStreamEx {
+
+	public static void main(String[] args) throws IOException {
+		FileOutputStream fos=new FileOutputStream("c:/AAA/Order.txt");
+		ObjectOutputStream oos=new ObjectOutputStream(fos);
+		
+		oos.writeObject(new Order("a",4,3));
+		oos.writeObject(new Order("b",5,3));
+		oos.writeObject(new Order("c",4,6));
+		oos.writeObject(new Order("d",7,3));
+
+	}
+
+}

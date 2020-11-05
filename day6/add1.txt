@@ -1,0 +1,19 @@
+﻿class add1
+{
+	public static void main(String[] args) {
+		//student s=new student("abc");
+		//A a=new A("a",78,65);
+		//B b=new B("b",60);
+		A_1 c=new A_1("abc",65,85,74);
+
+	//	A_1 a2=new A_1();
+		//A a=new A("ac",78);
+		
+
+		/*A a=new A();
+		B b=new B();
+
+		System.out.println("名:"+a.name+"\t國文:"+a.chi+"\tword:"+a.word);
+		System.out.println("名:"+b.name+"\t國文:"+b.chi+"\texcel:"+b.excel);*/
+	}
+}

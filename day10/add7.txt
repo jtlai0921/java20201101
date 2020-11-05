@@ -1,0 +1,23 @@
+﻿import java.util.Scanner;
+class add7
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int[] x=new int[3];
+		System.out.println("輸入索引");
+		
+				int n=sc.nextInt();
+			x[n]=100;//new java.lang.ArrayIndexOutOfBoundsException();
+
+			System.out.println("請輸入分母");
+
+			int m=sc.nextInt();
+
+			System.out.println("x["+n+"]/"+m+"="+x[n]/m);
+			for(int i=1;i<=10;i++)
+			{
+				System.out.println("a");
+			}
+
+	}
+}

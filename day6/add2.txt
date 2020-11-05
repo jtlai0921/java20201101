@@ -1,0 +1,18 @@
+﻿class add2
+{
+	public static void main(String[] args) {
+		SA s1=new SA("abc",78);
+		SB s2=new SB("ff",65);
+
+		System.out.println(s1.show());
+		System.out.println(s2.show());
+		System.out.println("========================");
+		//s1.name="yyy";
+		s1.setName("uuu");
+		System.out.println(s1.show());
+		System.out.println(s2.show());
+
+		s1.change(78);
+		s1.skill();
+	}
+}

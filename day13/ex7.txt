@@ -1,0 +1,50 @@
+﻿package lambdaEX;
+interface book3
+{
+	double bookPrice(double price);
+	
+}
+interface book4
+{
+	void show(String bookname,double price);
+}
+
+
+public class ex7 {
+
+	public static void main(String[] args) {
+		book3 b1=(double price)->price*0.95;
+		book3 b2=(double price)->price*0.85;
+		book3 b3=(price)->price*0.9;
+		book3 b4=price->price*0.8;
+		System.out.println(b1.bookPrice(1000)+"\t"+b2.bookPrice(1000));
+		System.out.println("========================");
+		
+		book4 B1=(String bookname,double price)->
+		System.out.println("書名:"+bookname+"\t價格:"+price);
+		
+		book4 B2=(bookname,price)->System.out.println("書名:"+bookname+"\t價格:"+price);
+		
+		B1.show("java", 1000);
+		
+		
+		
+		/*book3 b=new book3() 
+		{
+
+			@Override
+			public double bookPrice(double price) {
+				
+				return price*0.95;
+			}
+			
+		};
+		
+		System.out.println("價格:"+b.bookPrice(1000));
+		System.out.println("============================");
+		book3 b2=(double price)->price*0.95;
+		System.out.println("價格="+b2.bookPrice(1000));*/
+		
+	}
+
+}

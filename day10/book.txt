@@ -1,0 +1,29 @@
+﻿interface book
+{
+	double pi=3.14;
+	double bookPrice(double price);
+	String bookName(String name);
+	/******java8************/
+
+	static void Title(String msg)
+	{
+		System.out.println("static:"+msg);
+	}
+
+	default void show(String msg)
+	{
+		System.out.println("default:"+msg);
+	}
+}
+
+class bookStore implements book
+{
+	public double bookPrice(double price)
+	{
+		return price*0.95;
+	}
+	public String bookName(String name)
+	{
+		return "書名:"+name;
+	}
+}

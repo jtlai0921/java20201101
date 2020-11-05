@@ -1,0 +1,26 @@
+﻿package lambdaEX;
+
+import java.util.Arrays;
+
+public class ex1 {
+
+	public static void main(String[] args) {
+		int[] x=new int[] {52,65,56,74,30};
+		for(int o:x)
+		{
+			System.out.print(o+" ");
+		}
+		System.out.println("\n=============================");
+		Arrays.sort(x);
+		for(int o:x)
+		{
+			System.out.print(o+" ");
+		}
+		System.out.println("\n=============================");
+		
+		System.out.println(Arrays.binarySearch(x, 56));
+		System.out.println(Arrays.binarySearch(x, 20));
+
+	}
+
+}

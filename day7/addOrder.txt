@@ -1,0 +1,9 @@
+﻿class addOrder
+{
+	public static void main(String[] args) {
+		Order o=new Order();
+
+		System.out.println(o);
+		System.out.println(o.getClass().getName()+"@"+Integer.toHexString(o.hashCode()));
+	}
+}

@@ -1,0 +1,16 @@
+﻿package lambdaEX;
+
+public class ex3 {
+
+	public static void main(String[] args) {
+		bookStore b=new bookStore();
+		b.bookName("java");
+		System.out.println("價格:"+b.bookPrice(1000));
+		System.out.println("pi="+book.pi);
+		
+		book.CompanyName("巨匠電腦");
+		System.out.println(b.Title("javaOCP"));
+
+	}
+
+}

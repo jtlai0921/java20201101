@@ -1,0 +1,41 @@
+﻿class FV
+{
+	private static int pv;
+	private double r;
+	private int n;
+	private double fv;
+
+	FV(double r,int n)
+	{
+		
+		this.r=r;
+		this.n=n;
+		fv=pv*(1+r*n);
+	}
+
+
+	static void CompanyName()
+	{
+		System.out.println("巨匠電腦");
+	}
+
+	/*static*/void setR(double r)
+	{
+		this.r=r;
+	}
+
+	static void setPv(int pv)
+	{
+		FV.pv=pv;
+	}
+
+	void show()
+	{
+		fv=pv*(1+r*n);
+		System.out.println("本金:"+pv+
+			"\t利率:"+r+
+			"\t期數:"+n+
+			"\t單利本利和:"+fv);
+	}
+
+}

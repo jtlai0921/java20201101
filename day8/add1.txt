@@ -1,0 +1,14 @@
+﻿class add1
+{
+	public static void main(String[] args) {
+		/*Order o1=new Order("a");//is-a Order
+		System.out.println(o1.show());
+		System.out.println(o1);
+		o1.skillA();*/
+
+		Order o2=new SA("b",7);//is-a Order 
+		System.out.println(o2.show());
+		System.out.println(o2);
+		o2.skillA();
+	}
+}

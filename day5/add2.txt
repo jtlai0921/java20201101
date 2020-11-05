@@ -1,0 +1,41 @@
+﻿class add2
+{
+	public static void main(String[] args) {
+		member[][] m=new member[2][];
+		m[0]=new member[3];//m[0][0]~~m[0][2]
+		m[1]=new member[2];//[1][0],[1][1]
+
+		System.out.println(m);
+		System.out.println(m[0]);
+		System.out.println(m[0][0]);
+		System.out.println(m[1]);
+		m[0][0]=new member("a1","ii");
+		m[0][1]=new member("a2","ii");
+		m[0][2]=new member("a3","ii");
+
+
+		m[1][0]=new member("b1","ii");
+		m[1][1]=new member("b2","ii");
+
+
+		for(int i=0;i<m.length;i++)
+		{
+			for(int j=0;j<m[i].length;j++)
+			{
+				System.out.print(m[i][j]+"\t"+"m["+i+"]["+j+"]=");
+				m[i][j].show();
+			}
+		}
+		System.out.println("========================");
+
+		for(member[] o:m)
+		{
+			for(member u:o)
+			{
+				System.out.print(u+"\t");
+				u.show();
+			}
+		}
+
+	}
+}

@@ -1,0 +1,20 @@
+﻿ class bookStore implements book
+{
+	private String CompanyName;
+	
+	void show(String CompanyName)
+	{
+		this.CompanyName=CompanyName;
+		System.out.printl("CompanyName:"+CompanyName);
+	}
+
+	public double bookPrice(double price)
+	{
+		return price;
+	}
+
+	public String bookName(String name)
+	{
+		return "書名:"+name;
+	}
+}

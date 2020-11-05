@@ -1,0 +1,10 @@
+﻿class add1
+{
+	public static void main(String[] args) {
+		SA a=new SA("a",10);
+		SB b=new SB("b",5);
+
+		System.out.println(a.show());
+		System.out.println(b.show());
+	}
+}

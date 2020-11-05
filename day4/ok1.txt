@@ -1,0 +1,6 @@
+﻿private void okMouseClicked(java.awt.event.MouseEvent evt) {                                
+        String CHI=chi.getText();        
+       System.out.println(CHI);
+        
+        show.setText(CHI);
+    }                    

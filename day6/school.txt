@@ -1,0 +1,47 @@
+﻿class school
+{
+	private String name;
+	private int x;
+	school(String name)
+	{
+		this.name=name;
+	}
+
+
+	String show()
+	{
+		return "名:"+name;
+	}
+
+
+	void setName(String name)
+	{
+		this.name=name;
+	}
+
+	void change(String name)
+	{
+		this.name=name;
+		System.out.println("修改名 name="+name);
+	}
+
+	void change(String name,int x)
+	{
+		this.name=name;
+		this.x=x;
+		System.out.println("修改名,x, name="+name+"\tx="+x);
+	}
+
+	void skill()
+	{
+		System.out.println("school skill");
+	}
+
+	protected int abc(int x)
+	{
+		return 0;
+	}
+
+
+
+}

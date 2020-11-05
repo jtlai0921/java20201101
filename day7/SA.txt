@@ -1,0 +1,21 @@
+﻿class SA extends Company
+{
+	private int Lcd;
+
+	SA(String name,int Lcd)
+	{
+		super(name);
+		this.Lcd=Lcd;
+	}
+
+
+	String show()
+	{
+		return super.show()+"\tLCD:"+Lcd;
+	}
+
+	void skill()
+	{
+		System.out.println("SA skill");
+	}
+}

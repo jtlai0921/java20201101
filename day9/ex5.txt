@@ -1,0 +1,15 @@
+﻿class ex5
+{
+	public static void main(String[] args) {
+		book3[] x=book3.values();
+
+		for(int i=0;i<x.length;i++)
+		{
+			System.out.println(x[i]+","+
+				x[i].getAddress()+","+
+				x[i].getPrice()+","+
+				x[i].getAmount());
+		}
+		
+	}
+}

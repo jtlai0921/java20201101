@@ -1,0 +1,32 @@
+﻿class add1
+{
+	public static void main(String[] args) {
+		FV.CompanyName();
+		//FV.pv=-5000;
+		//f2.r=0.011;
+		FV.setPv(15000);
+		FV f1=new FV(0.01,5);
+		FV f2=new FV(0.012,4);
+		FV f3=new FV(0.013,3);
+		FV f4=new FV(0.014,2);
+
+
+
+		f1.show();
+		f2.show();
+		f3.show();
+		f4.show();
+
+		System.out.println("=======================");
+
+		//FV.pv=15000;
+		//f2.r=-0.011;
+		FV.setPv(20000);
+		f1.setR(0.033);
+		f1.show();
+		f2.show();
+		f3.show();
+		f4.show();
+
+	}
+}

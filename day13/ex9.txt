@@ -1,0 +1,42 @@
+﻿package lambdaEX;
+
+import java.util.function.Predicate;
+
+public class ex9 {
+
+	public static void main(String[] args) {
+		/*Predicate<Integer> p=new Predicate<Integer>() 
+		{
+
+			@Override
+			public boolean test(Integer t) {
+				// TODO Auto-generated method stub
+				return t>=0;
+			}
+			
+			
+		};*/
+		
+		//Predicate<Integer> p=(Integer t)->t>=0;		
+		Predicate<Integer> p=cal_P::t1;
+		System.out.println(p.test(-10));
+
+	}
+
+}
+
+class cal_P
+{
+	static boolean t1(Integer t)
+	{
+		if(t>=60)
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}
+}
+

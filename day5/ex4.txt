@@ -1,0 +1,27 @@
+﻿class ex4
+{
+	public static void main(String[] args) {
+		int[] x=new int[3];
+		x[0]=10;
+		x[1]=20;
+		x[2]=30;
+		//x[3]=50;
+		System.out.println(x);
+		for(int o:x)
+		{
+			System.out.println(o);
+		}
+
+		System.out.println("=======================");
+		x=new int[10];//傳址
+		System.out.println(x);
+		x[3]=30;
+		x[4]=50;
+
+
+		for(int o:x)
+		{
+			System.out.println(o);
+		}
+	}
+}

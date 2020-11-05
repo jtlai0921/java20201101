@@ -1,0 +1,12 @@
+﻿class ex4
+{
+	public static void main(String[] args) {
+		Company.Month[] month=Company.Month.values();
+		Company.week[] week=Company.week.values();
+		Company.Address[] address=Company.Address.values();
+
+		System.out.println(month[0]);
+		System.out.println(week[0]);
+		System.out.println(address[0]);
+	}
+}

@@ -1,0 +1,4 @@
+﻿interface S4
+{
+	void showA();
+}

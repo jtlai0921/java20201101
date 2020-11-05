@@ -1,0 +1,42 @@
+﻿package lambdaEX;
+
+public interface book2<E,T> {
+	E bookPrice(E price);
+	T bookNumber(T number);
+
+}
+
+class bookStore2 implements book2
+{
+
+	@Override
+	public Object bookPrice(Object price) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Object bookNumber(Object number) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+}
+
+
+class bookStore3 implements book2<Integer,Double>
+{
+
+	@Override
+	public Integer bookPrice(Integer price) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Double bookNumber(Double number) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+}

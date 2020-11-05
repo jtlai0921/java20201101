@@ -1,0 +1,4 @@
+﻿interface S3
+{
+	void show1();
+}

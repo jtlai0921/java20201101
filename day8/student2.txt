@@ -1,0 +1,11 @@
+﻿package com.SA;
+
+public interface student2
+{
+	//修改
+	void set(int x);
+
+	//讀取
+
+	int get();
+}

@@ -1,0 +1,32 @@
+﻿package collectionEX;
+
+import java.util.Arrays;
+
+public class ex5 {
+
+	public static void main(String[] args) {
+		int[] x=new int[6];
+		x[0]=50;
+		x[1]=40;
+		x[2]=65;
+		x[3]=77;
+		x[4]=30;
+		x[5]=15;
+		
+		
+		for(int o:x)
+		{
+			System.out.print(o+" ");
+		}
+		
+		System.out.println("\n=================================");
+		
+		Arrays.sort(x);
+		for(int o:x)
+		{
+			System.out.print(o+" ");
+		}
+
+	}
+
+}

@@ -1,0 +1,7 @@
+﻿class book1
+{
+	public static final String name1="java7";
+	public static final String name2="java8";
+	public static final String name3="javaweb";
+}
+

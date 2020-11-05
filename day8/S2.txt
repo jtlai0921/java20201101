@@ -1,0 +1,4 @@
+﻿interface S2
+{
+	void show2();
+}

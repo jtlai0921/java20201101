@@ -1,0 +1,45 @@
+﻿class student
+{
+	String name;
+	int chi;
+	int eng;
+	int sum;
+
+	student(int chi,int eng)//int chi=65
+	{
+		if(chi>=0 && eng>=0)
+		{
+			this.chi=chi;
+			this.eng=eng;
+
+			//this.sum=this.chi+this.eng;
+			sum=chi+eng;
+		}
+		
+
+		//int chi=60;
+		//System.out.println("新增一位學生");
+	}
+
+	student(String name,int chi,int eng)
+	{
+		if(chi>=0 && chi<=100 && eng>=0 && eng<=100)
+		{
+			this.name=name;
+			this.chi=chi;
+			this.eng=eng;
+
+			//this.sum=this.chi+this.eng;
+			sum=chi+eng;
+		}
+	}
+
+	student(String name,int chi){}
+	student(int chi,String name){}
+	//student(int x,int y){}
+	void show()
+	{
+		System.out.println("名:"+name+"\t國文:"+chi+"\t英文:"+eng+"\t總分:"+sum);
+	}
+
+}

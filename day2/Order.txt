@@ -1,0 +1,30 @@
+﻿class Order
+{
+	String name;
+	int lcd;
+	int ram;
+	int mouse;
+	int sum;
+
+	Order(String name,int lcd,int ram,int mouse)
+	{
+		if(lcd>=0 && ram>=0 && mouse>=0)
+		{
+			this.name=name;
+			this.lcd=lcd;
+			this.ram=ram;
+			this.mouse=mouse;
+
+			sum=lcd*4999+ram*1280+mouse*799;
+		}
+	}
+
+	void show()
+	{
+		System.out.println("名:"+name+
+			"\tlcd:"+lcd+
+			"\tram:"+ram+
+			"\tmouse:"+mouse+
+			"\t總價:"+sum);
+	}
+}

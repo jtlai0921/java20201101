@@ -1,0 +1,36 @@
+﻿class add1
+{
+	public static void main(String[] args) {
+		student s=new student("a",74,85);
+		student s2=new student("b",50,85);
+		s.show();
+		s2.show();
+		/*s.chi=-65;
+		s.sum=s.chi+s.eng;
+		s.ave=s.sum/2.;*/
+		System.out.println("=====================");
+		//s.change(65);
+		//s2.change(70);
+
+		//System.out.println("國文加總="+(s.change2(65)+s2.change2(70)));
+		s.change2(65);
+		s2.change2(70);
+		s.show();
+		s2.show();
+		System.out.println("=====================");
+		//s.chi=-300;
+		//s2.chi=1000;
+		s.show();
+		s2.show();
+
+		System.out.println("=====================");
+		s.setChi(100);
+		s2.setChi(95);
+
+		System.out.println("國文加總="+(s.getChi()+s2.getChi()));
+		//s.show();
+		//s2.show();
+
+
+	}
+}

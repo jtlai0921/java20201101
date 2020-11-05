@@ -1,0 +1,28 @@
+﻿class ex1
+{
+	public static void main(String[] args) {
+		/*school1 s=new school1();
+		s.show();*/
+		new school1().show();
+
+		/*school1.A1 a=new school1().new A1();
+		System.out.println(a);
+		a.show();*/
+
+		new school1().new A1().show();
+
+		/***********school1.B1************/
+		school1.B1 b=new school1().new B1();
+		b.show();
+
+		new school1().new B1().show();
+
+		/***********school1.A1.A1_1************/
+
+		school1.A1.A1_1 a1=new school1().new A1().new A1_1();
+		a1.show();
+
+		new school1().new A1().new A1_1().show();
+
+	}
+}

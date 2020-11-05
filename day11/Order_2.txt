@@ -1,0 +1,48 @@
+﻿package ioEX;
+
+import java.io.Serializable;
+
+public class Order implements Serializable{
+	private String name;
+	private int Ruler;
+	private int Pen;
+	private int Sum;
+	public Order(String name, int ruler, int pen) {
+		super();
+		this.name = name;
+		this.Ruler = ruler;
+		this.Pen = pen;
+		
+		Sum=Ruler*20+Pen*25;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int getRuler() {
+		return Ruler;
+	}
+	public void setRuler(int ruler) {
+		Ruler = ruler;
+	}
+	public int getPen() {
+		return Pen;
+	}
+	public void setPen(int pen) {
+		Pen = pen;
+	}
+	public int getSum() {
+		return Sum;
+	}
+	
+	
+	public void show()
+	{
+		this.Sum=Ruler*20+Pen*25;
+		System.out.println("名:"+name+"\t尺:"+Ruler+"\t筆:"+Pen+"\t總計:"+Sum);
+	}
+
+
+}

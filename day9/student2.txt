@@ -1,0 +1,7 @@
+﻿package com.SA;
+
+public interface student2 {
+	void set(int o);
+	int get();
+
+}

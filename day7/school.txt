@@ -1,0 +1,15 @@
+﻿abstract class school
+{
+	private String name;
+	school(String name)
+	{
+		this.name=name;
+	}
+
+	String show()
+	{
+		return "名:"+name;
+	}
+	abstract void skillA(String msg);
+
+}

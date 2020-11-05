@@ -1,0 +1,65 @@
+﻿class add1
+{
+	public static void main(String[] args) throws check{
+			Order o1=new Order("a1",4,2);
+			Order o2=new Order("b1",2,2);
+			Order o3=new Order("c1",4,2);
+
+
+
+			o1.show();
+			o2.show();
+			o3.show();
+
+			System.out.println("=====================");
+			//o1.setRuler(10);
+			int pen=-5;
+
+			assert pen>=0:"pen>=0";
+			o1.setPen(pen);
+
+			o1.show();
+			o2.show();
+			o3.show();
+		
+
+
+
+		/*try
+		{
+			Order o1=new Order("a1",4,2);
+			Order o2=new Order("b1",2,2);
+			Order o3=new Order("c1",4,2);
+
+
+
+			o1.show();
+			o2.show();
+			o3.show();
+
+			System.out.println("=====================");
+			o1.setRuler(-10);
+			o1.show();
+			o2.show();
+			o3.show();
+		}
+		catch(Exception e)
+		{
+			//System.out.println("尺與筆需>=0");
+			e.printStackTrace();
+		}*/
+		
+
+
+
+
+		/*Order o1=new Order("a",2,3);
+		o1.show();
+		o1.setRuler(10);
+		o1.show();
+		o1.setPen(2);
+		o1.show();*/
+
+
+	}
+}

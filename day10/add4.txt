@@ -1,0 +1,20 @@
+﻿class add4
+{
+	public static void main(String[] args) {
+		System.out.println("價格:"+new book()
+			{
+				public double bookPrice(double price)
+				{
+					if(price>=1000) price=price*0.95;
+
+					return price;
+
+				}
+
+				public String bookName(String name)
+				{
+					return null;
+				}
+			}.bookPrice(1000));
+	}
+}

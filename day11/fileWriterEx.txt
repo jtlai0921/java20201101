@@ -1,0 +1,23 @@
+﻿package ioEX;
+
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class fileWriterEx {
+
+	public static void main(String[] args)  {
+		
+		try(FileWriter fw= new FileWriter("c:/AAA/b.txt");)
+		{
+			
+			fw.write("ffffff");
+			//fw.close();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		//fw.close();
+	}
+
+}

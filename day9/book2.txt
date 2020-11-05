@@ -1,0 +1,11 @@
+﻿enum book2
+{
+	java7,java8,javaWEB//值
+}
+/*
+book2[] ?={"java7","java8","javaWEB"}
+
+?[0]="java7"
+
+
+*/

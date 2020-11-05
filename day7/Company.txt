@@ -1,0 +1,20 @@
+﻿/*final*/ class Company
+{
+	private String name;
+	final double pi=3.14;
+	Company(String name)
+	{
+		this.name=name;
+		//pi=52.2;
+	}
+
+	/*final*/ String show()
+	{
+		return "名:"+name;
+	}
+
+	void skill()
+	{
+		
+	}
+}

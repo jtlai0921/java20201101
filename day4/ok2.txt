@@ -1,0 +1,12 @@
+﻿private void okMouseClicked(java.awt.event.MouseEvent evt) {                                
+       String Name=name.getText();
+      Integer Ruler=new Integer(ruler.getText());
+      Integer Pen=new Integer(pen.getText());
+      
+      Order o1=new Order(Name,Ruler,Pen);
+      
+      show.setText("名:"+o1.getName()+
+              "\n尺:"+o1.getRuler()+
+              "\n筆:"+o1.getPen()+
+              "\n共:"+o1.getSum()+"元");
+    }                               

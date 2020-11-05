@@ -1,0 +1,33 @@
+﻿class add2
+{
+	public static void main(String[] args) {
+		book b=new book()
+		{
+			public double bookPrice(double price)
+			{
+				return price*0.85;
+			}
+			public String bookName(String name)
+			{
+				return "書名:"+name;
+			}
+		};
+
+		System.out.println(b.bookPrice(1000));
+		System.out.println(b.bookName("java"));
+		book.Title("java8");
+		b.show("java8");
+		//System.out.println(new bookStore().bookPrice(100));
+		//System.out.println(new add2$1().bookPrice(100));
+	}
+}
+/*
+class A1 extends bookStore
+{
+
+}
+
+class A2 extends add2$1
+{
+
+}*/

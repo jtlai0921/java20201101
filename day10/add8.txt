@@ -1,0 +1,34 @@
+﻿class add8
+{
+	public static void main(String[] args) {
+		try
+		{
+			Order[] o=
+			{
+				new Order("a",1,1),
+				new Order("b",1,2),
+				new Order("c",2,1),
+			};
+
+
+			for(Order u:o)
+			{
+				u.show();
+			}
+
+			System.out.println("============================");
+			o[2].setLcd(-5);
+			for(Order u:o)
+			{
+				u.show();
+			}
+
+		}
+		catch(Exception e)
+		{
+			System.out.println("新增LCD,RAM>=0");
+			e.printStackTrace();
+		}
+		
+	}
+}

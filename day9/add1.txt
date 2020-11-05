@@ -1,0 +1,29 @@
+﻿class company
+{
+	int x;
+	void show()
+	{
+		x++;
+		System.out.println("hello x="+x);
+	}
+
+	void skill()
+	{
+		x++;
+		System.out.println("skill x="+x);
+	}
+}
+class add1
+{
+	public static void main(String[] args) {
+		
+		//System.out.println(new company());//.show();
+		//System.out.println(new company());//.skill();
+		//new company().show();
+		//new company().skill();
+		//System.out.println(new company());
+		company c=new company();
+		c.show();
+		c.skill();
+	}
+}
